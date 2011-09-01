@@ -23,17 +23,34 @@
 
 ;;; Code:
 
-(defconst pinpoint-mode-version "0.1" "Version of `pinpoint-mode'.")
+(defconst pinpoint-mode-version "0.1"
+  "Version of `pinpoint-mode'.")
 
+;; Local variables
 (defgroup pinpoint nil
-  "pinpoint mode."
+  "Local variables for pinpoint mode."
   :prefix "pinpoint-"
   :group 'languages)
 
+;; Keymap
+(defvar pinpoint-mode-map nil
+  "Keymap for pinpoint mode.")
+
+;; Mode hook
+(defvar pinpoint-mode-hook nil
+  "Mode hook for pinpoint mode.")
+
+;; Sytax table
+(defvar pinpoint-mode-syntax-table nil
+  "Syntax table for pinpoint mode.")
+
 
 ;;;###autoload
-(define-derived-mode pinpoint-mode shell-script-mode "pinpoint"
-  "Major mode for editing pinpoint files. This is based on shell-script-mode mode."
+(define-derived-mode pinpoint-mode fundamental-mode
+  "PINPOINT"
+  "Major mode for editing pinpoint files."
+  
+  ;; do things here
 )
 
 (provide 'pinpoint-mode)
