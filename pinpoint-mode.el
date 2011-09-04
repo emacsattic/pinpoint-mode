@@ -14,12 +14,25 @@
 ;; http://sam.zoy.org/wtfpl/COPYING for more details.
 
 ;;; Commentary:
+;; This program is under developing and is not ready for distribution
+;; yet.
 
 ;;; TODO:
+;; - syntax coloring
+;; - font list integration
+;; - command execution
 
 ;;; Usage:
+;; Put this file in your load path of emacs and then put the 
+;; following line in your .emacs file to enable autoloading of
+;; pinpoint-mode. Emacs will automatically change major mode to
+;; pinpoint-mode when openning a file with a suffix of ".pin"
+;;
+;;  (require 'pinpoint-mode)
 
 ;;; Changelog:
+
+;; Nothing interesting yet.
 
 ;;; Code:
 
