@@ -14,7 +14,7 @@
 ;; http://sam.zoy.org/wtfpl/COPYING for more details.
 
 ;;; Commentary:
-;; This program is under developing and is not ready for distribution
+;; This program is under development and is not ready for distribution
 ;; yet.
 
 ;;; TODO:
@@ -132,8 +132,7 @@
   (easy-menu-define pinpoint-call-menu pinpoint-mode-map
     "Define menu for `pinpoint-mode'."
     pinpoint-mode-menu)
-  (easy-menu-add pinpoint-mode-menu)
-  (pinpoint-mode-debug-message "Menu added."))
+  (easy-menu-add pinpoint-mode-menu))
 
 (defun pinpoint-mode-about-pinpoint-mode (&optional arg)
   "About `pinpoint-mode'."
@@ -151,7 +150,7 @@
 
 (defun pinpoint-mode-init-syntax-table (&optional arg)
   "Initialize `pinpoint-mode-syntax-table'."
-  (pinpoint-mode-debug-message "Init syntax table."))
+  ())
 
 (defun pinpoint-mode-debug-message (&optional arg)
   "Print debug message in `pinpoint-mode'."
